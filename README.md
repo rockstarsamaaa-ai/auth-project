@@ -70,8 +70,8 @@ Create a `.env` file in root:
 
 ```env
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+MONGO_URI=mongodb+srv://admin:pass%40123@cluster0.gqtqfrh.mongodb.net/authDB
+JWT_SECRET=7a41acf0fa24821e9125e2368d396df3d8a0da08946a14215bcdc92434661d4b6cc3f4cad37721df7fc85817c89b60685fefaaf8e3fce67b19e69e64b0a63613
 ```
 
 ---
@@ -79,13 +79,13 @@ JWT_SECRET=your_secret_key
 ##  Run the Server
 
 ```bash
-npm run dev
+npm start
 ```
 
 Server will run at:
 
 ```
-http://localhost:5000
+auth-project-q2ds.onrender.com
 ```
 
 ---
@@ -94,7 +94,7 @@ http://localhost:5000
 
 ###  Register User
 
-* **POST** `/api/auth/register`
+* **POST** `https://auth-project-q2ds.onrender.com/api/auth/register`
 
 ```json
 {
@@ -108,7 +108,7 @@ http://localhost:5000
 
 ###  Login User
 
-* **POST** `/api/auth/login`
+* **POST** `https://auth-project-q2ds.onrender.com/api/auth/login`
 
 ```json
 {
@@ -129,7 +129,7 @@ http://localhost:5000
 
 ###  Get Profile (Protected)
 
-* **GET** `/api/auth/profile`
+* **GET** `https://auth-project-q2ds.onrender.com/api/auth/profile`
 
 **Headers:**
 
